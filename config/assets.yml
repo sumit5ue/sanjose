@@ -1,0 +1,19 @@
+embed_assets: off
+compress_assets: off
+javascript_compressor: yui
+template_function: Handlebars.compile
+
+javascripts:
+  common:
+    - public/javascripts/lib/jquery-1.6.2.min.js
+    - public/javascripts/lib/json2.js
+    - public/javascripts/lib/underscore.js
+    - public/javascripts/lib/backbone.js
+    - public/javascripts/lib/handlebars-1.0.0.beta6.js
+    - public/javascripts/lib/jquery.timeago.js
+
+  application:
+    - public/javascripts/app/routers/baseRouter.js
+    - public/javascripts/app/routers/homeRouter.js
+    - public/javascripts/application.js
+    
