@@ -5,16 +5,20 @@ HomeRouter = BaseRouter.extend({
   },
 
   routes : {
+    "" : "renderLogin",
     "home" : "renderLoggedInView",
-    "": "test"
+    "register": "rederRegistrationView"
   },
 
-  test : function(){
-      alert('empty');
+  renderLogin : function(){
+    this.loginView = new LoginView();
+  },
+
+  rederRegistrationView: function() {
+    this.registrationView = new RegistrationView();
   },
 
   renderLoggedInView : function() {
     this.requireLogin();
-    alert("yello");
   }
 });

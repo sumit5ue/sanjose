@@ -12,7 +12,13 @@ javascripts:
     - public/javascripts/lib/handlebars-1.0.0.beta6.js
     - public/javascripts/lib/jquery.timeago.js
 
+  templates:
+    - app/views/templates/**/*.jst
+
   application:
+    - public/javascripts/app/models/registration.js
+    - public/javascripts/app/views/registrationView.js
+    - public/javascripts/app/views/loginView.js
     - public/javascripts/app/routers/baseRouter.js
     - public/javascripts/app/routers/homeRouter.js
     - public/javascripts/application.js
