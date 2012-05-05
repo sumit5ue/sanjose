@@ -22,12 +22,14 @@ javascripts:
     - public/javascripts/app/models/registration.js
     - public/javascripts/app/models/login.js
     - public/javascripts/app/models/token.js
+    - public/javascripts/app/models/client.js
     - public/javascripts/app/models/deal.js
     - public/javascripts/app/views/headerView.js
     - public/javascripts/app/views/dealView.js
     - public/javascripts/app/views/homeView.js
     - public/javascripts/app/views/registrationView.js
     - public/javascripts/app/views/loginView.js
+    - public/javascripts/app/views/profileView.js
     - public/javascripts/app/routers/baseRouter.js
     - public/javascripts/app/routers/homeRouter.js
     - public/javascripts/application.js

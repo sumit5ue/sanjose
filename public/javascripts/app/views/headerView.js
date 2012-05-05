@@ -12,6 +12,9 @@ HeaderView = Backbone.View.extend({
     $(this.el).find(".header-deals").click(function() {
       that.createNewDeal();
     });
+    $(this.el).find(".header-home").click(function() {
+      that.goToHome();
+    });
   },
 
   render: function() {
@@ -32,5 +35,9 @@ HeaderView = Backbone.View.extend({
 
   createNewDeal: function() {
     window.location.hash = "#deal";
+  },
+
+  goToHome: function() {
+    window.location.hash = "#home";
   }
 });

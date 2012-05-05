@@ -11,8 +11,12 @@ gem 'json'
 gem 'curb'
 gem 'jammit'
 gem 'sass'
+gem "heroku"
 gem "paperclip", "~> 3.0"
 
+group :production do
+  gem 'thin'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 

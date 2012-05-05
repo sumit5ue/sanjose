@@ -1,5 +1,6 @@
 HomeView = Backbone.View.extend({
   template : JST["home"],
+  clientTemplate : JST["clientTemplate"],
 
   initialize: function() {
     this.render();
@@ -11,18 +12,13 @@ HomeView = Backbone.View.extend({
   },
 
   renderStats: function() {
-    
-  },
-
-  renderProfile: function() {
-    
   },
 
   renderDeal: function() {
     new DealView();
   },
 
-  renderHome: function() {
-    
+  renderProfile: function() {
+    new ProfileView();
   }
 });

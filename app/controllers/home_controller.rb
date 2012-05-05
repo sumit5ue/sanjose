@@ -35,4 +35,9 @@ class HomeController < ApplicationController
   def token
     render :json => {:token => PerishableToken.generate(1.hour)}
   end
+
+  def client
+    client_id = cookies["id"].to_i
+    render :json => Client.find(client_id).to_json
+  end
 end

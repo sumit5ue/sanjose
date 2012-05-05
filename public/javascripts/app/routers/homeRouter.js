@@ -42,7 +42,7 @@ HomeRouter = BaseRouter.extend({
       this.headerView.forloggedIn(true);
     }
     this.homeView = new HomeView();
-    this.homeView.renderHome();
+    this.homeView.renderProfile();
   },
 
   deal: function() {

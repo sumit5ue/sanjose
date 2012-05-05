@@ -58,6 +58,7 @@ Sanjose::Application.routes.draw do
       post "deal"
       post "image"
       get "token"
+      get "client"
     end
   end
 
