@@ -55,6 +55,9 @@ Sanjose::Application.routes.draw do
     collection do
       post "login"
       post "register"
+      post "deal"
+      post "image"
+      get "token"
     end
   end
 

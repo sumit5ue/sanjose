@@ -6,7 +6,6 @@ class CreateDeals < ActiveRecord::Migration
       t.string :image
       t.datetime :start_date
       t.datetime :end_date
-      t.has_attached_file :avatar
       t.integer :client_id
     end
     connection.execute("ALTER TABLE deals ADD FOREIGN KEY (client_id) REFERENCES clients (id)")

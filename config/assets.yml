@@ -6,6 +6,9 @@ template_function: Handlebars.compile
 javascripts:
   common:
     - public/javascripts/lib/jquery-1.6.2.min.js
+    - public/javascripts/lib/jquery.ui.widget.js
+    - public/javascripts/lib/jquery.iframe-transport.js
+    - public/javascripts/lib/jquery.fileupload.js
     - public/javascripts/lib/json2.js
     - public/javascripts/lib/underscore.js
     - public/javascripts/lib/backbone.js
@@ -17,9 +20,18 @@ javascripts:
 
   application:
     - public/javascripts/app/models/registration.js
+    - public/javascripts/app/models/login.js
+    - public/javascripts/app/models/token.js
+    - public/javascripts/app/models/deal.js
+    - public/javascripts/app/views/headerView.js
+    - public/javascripts/app/views/dealView.js
+    - public/javascripts/app/views/homeView.js
     - public/javascripts/app/views/registrationView.js
     - public/javascripts/app/views/loginView.js
     - public/javascripts/app/routers/baseRouter.js
     - public/javascripts/app/routers/homeRouter.js
     - public/javascripts/application.js
-    
+
+stylesheets:
+  common:
+    - public/stylesheets/main.css

@@ -1,0 +1,19 @@
+<div id="deals-container">
+  <div class="deal-title deal-input-container">
+    <div class="text-title">Title : </div><div class="input-title"><input id="deal-title"type="text" id="title" placeholder="Add a Title"></div>
+  </div>
+  <div class="description deal-input-container">
+    <div class="text-desc">Description :</div> <div class="input-desc"><textarea id="deal-description"class="comment-text" placeholder="Add a Description"></textarea></div>
+  </div>
+  <div class="image-management">
+    <div class="image-upload">
+      <div class="text-image">Image : </div><input id="fileupload" type="file" name="files[]" data-url="home/image?token={{token}}"   multiple>
+    </div>
+    <div class="preview">
+      <img id="preview" src=""/>
+    </div>
+  </div>
+  <div class="submit">
+    <button type="button" class="dealSubmit button-main">Submit</button>
+  </div>
+</divs>

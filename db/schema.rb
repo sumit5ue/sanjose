@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120501022204) do
+ActiveRecord::Schema.define(:version => 20120504034802) do
 
   create_table "clients", :force => true do |t|
     t.string   "username"
@@ -32,13 +32,22 @@ ActiveRecord::Schema.define(:version => 20120501022204) do
     t.string   "image"
     t.datetime "start_date"
     t.datetime "end_date"
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
     t.integer  "client_id"
   end
 
   add_index "deals", ["client_id"], :name => "client_id"
+
+  create_table "pics", :force => true do |t|
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.text     "parent_key"
+    t.integer  "deal_id"
+  end
+
+  add_index "pics", ["deal_id"], :name => "deal_id"
 
 end
